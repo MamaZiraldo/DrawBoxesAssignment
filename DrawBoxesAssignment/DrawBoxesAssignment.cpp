@@ -19,24 +19,14 @@ void DrawSquare(int x, int y, int width, int height, WORD colour, int ascii)
 	width *= 2;
 	HANDLE ConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(ConsoleHandle, colour);
-	gotoXY(x, y);
-	for (int i = 0; i < width; i++)
+
+	for (int i = 0; i < height; i++)
 	{
-		cout << char(ascii);
-	}
-	int tempy = 0;
-	while (tempy < height)
-	{
-		tempy++;
-		gotoXY(x, y+tempy);
-		cout << char(ascii);
-		gotoXY(x+width-1, y+tempy);
-		cout << char(ascii);
-	}	
-	gotoXY(x, y + height);
-	for (int j = 0; j < width; j++)
-	{
-		cout << char(ascii);
+		for(int j = 0; j < width; j++)
+		{
+			gotoXY(x+j, y+i);
+			cout << char(ascii);
+		}
 	}
 }
 
