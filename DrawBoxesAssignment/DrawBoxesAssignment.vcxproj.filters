@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DrawTheBoxesAssignment.cpp">
+    <ClCompile Include="DrawBoxesAssignment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

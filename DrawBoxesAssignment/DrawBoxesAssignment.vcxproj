@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{84296a71-79fe-4677-9e3a-8b773cd86373}</ProjectGuid>
-    <RootNamespace>DrawTheBoxesAssignment</RootNamespace>
+    <ProjectGuid>{1a64d855-65d5-42c7-b664-baa6a34411e5}</ProjectGuid>
+    <RootNamespace>DrawBoxesAssignment</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DrawTheBoxesAssignment.cpp" />
+    <ClCompile Include="DrawBoxesAssignment.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
