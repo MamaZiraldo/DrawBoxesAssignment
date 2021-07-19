@@ -22,14 +22,10 @@ void DrawSquare(int x, int y, int width, int height, WORD colour, int ascii)
 
 	for (int i = 0; i < height; i++)
 	{
-		for(int j = 0; j < width; j++)
-		{
-			gotoXY(x+j, y+i);
-			if (i == 0 || i == height-1 || j == 0 || j == width-1)
-			{
-				cout << char(ascii);
-			}			
-		}
+		gotoXY(x + i, y + i);
+		cout << char(ascii);
+		gotoXY((x + height - 1 - i), (y + i));
+		cout << char(ascii);
 	}
 }
 
